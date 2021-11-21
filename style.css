@@ -12,19 +12,30 @@
 body{
     align-content: center;
 }
+
 h1 {
+    width: 30px;
+    text-shadow: salmon;
     margin: none;
-    text-align: justify;
+    text-align: center;
     border: none;
-    color: rgb(154, 114, 192) !important;
+    color: rgb(154, 114, 192);
     
 }
 
-h2 {
+.h2 {
     margin: none;
     text-align: justify;
     border: none;
     color: #d63384
+    
+}
+
+h2-show{
+    margin: none;
+    text-align: justify;
+    border: none;
+    color: red;
     
 }
 
@@ -38,8 +49,8 @@ h2 {
 }
 
 .myimage2 {
-    display: none;
-  width:80%
+    display:none;
+   width:80%
 }
 .myimage2-show {
     display: block;

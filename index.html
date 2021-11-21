@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
@@ -12,32 +14,34 @@
 
 
 </head>
+<section class="container">
+    <div class="row">
+        <article class="col s6 offset-s3">
+<body class="p-3 mb-2 bg-white text-black center-align>
 
-<body class="p-3 mb-2 bg-dark text-white">
+    <h1 class=" display-1"> Olá usuário!</h1>
 
-
-    <h1 class=" display-1 p-3 mb-2 bg-secondary text-white">Olá usuário!</h1>
-
-
-    <h2 class=" center display-3 ">Você é de qual país?</h2> <input type='text' name='pais' id='pais'>
+    <h2  id="h2" class=" center-align display-3 ">Você é de qual país?</h2> 
+    <input clas= "form-control"placeholder="Escreva aqui.." type='text' name='pais' id='pais'>
     <input class="btn btn-primary active" type="button" value="Verify" onclick="verificar()" />
-    <div id="res" class="display-4 alert alert-dark ">_____________</div>
-
+</article>
+</div>
+</section>
     <!-- foto do doguinho caramelo  -->
     <img id="image-1" class="myimage" display="none" src="doguinocaramelo.jpg">
     <img id="image-2" class="myimage2" display="none" src="chems.png">
 
     <script>
         var pais = window.document.getElementById('pais');
-        var res = window.document.getElementById('res');
-
+        ;
         function verificar() {
 
             if (pais.value == 'brasil' || pais.value == 'BRASIL' || pais.value == 'Brasil') {
-                res.innerText = 'Você é Brasileiro!';
+                var c = alert("Você é Brasileiro!")
                 document.getElementById('image-1').classList.add('myimage-show');
+                
             } else {
-                res.innerText = 'Você é Estrangeiro!';
+                var c = alert("Você é Estrangeiro")
                 document.getElementById('image-2').classList.add('myimage2-show');
             }
         }
